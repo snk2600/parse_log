@@ -1,0 +1,22 @@
+<html>
+<head>
+<title></title>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script> 
+var ids;
+var i = 4;
+var prev;
+$(function(){
+  $("#header").load("header.html"); 
+  $("#main").load("logmod.html", function() {
+  		ids = document.querySelectorAll('[id]'); console.log(ids);
+	});
+  $("#footer").load("footer.html"); 
+});
+</script> 
+</head>
+<body>
+<div id="header"></div>
+<div class="main" id="main"></div>
+</body>
+</html>
